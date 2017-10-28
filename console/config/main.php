@@ -12,6 +12,9 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'console\controllers',
     'controllerMap' => [
+	'heroku' => [
+            'class' => 'purrweb\heroku\HerokuGeneratorController',
+        ],
         'fixture' => [
             'class' => 'yii\console\controllers\FixtureController',
             'namespace' => 'common\fixtures',
